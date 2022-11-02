@@ -1,0 +1,23 @@
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:last-of-type {
+    margin-bottom: 1rem!important;
+}
+
+.help-text{
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.css-ahj2mt-MuiTypography-root{
+    font-family: 'Poppins', sans-serif!important;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type {
+    margin-bottom: 1rem!important;
+    backdrop-filter: blur(4px)!important;
+    border: 3px solid!important;
+    background: rgba(234, 185, 121, 0.825)!important;
+    color: black!important;
+    transition: var(--transition);
+    padding: 1rem;
+}

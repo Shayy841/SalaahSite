@@ -1,0 +1,134 @@
+.gallery{
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.swiper .swiper-fade .swiper-initialized .swiper-horizontal .swiper-pointer-events .swiper-watch-progress .swiper-backface-hidden .mySwiper{
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 80vh;
+    text-align: center;
+}
+.like-btn{
+    color: white;
+}
+.like-btn-color{
+    color: red;
+}
+.swiper-images{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.car__head {
+    max-height: 80vh !important;
+    background-repeat: no-repeat;
+    width: auto;
+  object-fit: cover;
+
+}
+.all__img:hover{
+    transform: scale(1.02);
+}
+.all__img{
+    transition: var(--transition);
+}
+.all__img:focus{
+    outline: none;
+}
+
+
+
+
+
+
+.cards-gallery {    
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;    
+    position: relative;
+    color: #f0f0f0;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.cards-gallery img {
+    object-fit: cover;
+    opacity: 0.9;
+    filter: grayscale(0);
+    transition: opacity 0.2s ease-out;
+}
+
+
+.card-gallery-like {
+    position: absolute;
+    /* inset: auto auto 1rem 30px; */
+    /* margin: 0; */
+    top: 50%;
+    left: 50%;
+
+    transition: all 0.3s ease-out;
+    font-weight: normal;
+}
+.cards-gallery p {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+}
+.cards-gallery p {
+    inset: auto auto 80px 30px;
+}
+.cards-gallery-btn {
+    inset: auto auto 40px 30px;
+    background-color: transparent;
+    color: red;
+    text-decoration: none;
+    position: absolute;
+    opacity: 0;
+    width: 80%;
+    transition: opacity 0.3s ease-out;
+}
+.card-gallery-like:hover {
+    /* inset: auto auto 2rem 1.8rem; */
+    transform: scale(1.5);
+    /* transition: inset 0.3s ease-out; */
+}
+.cards-gallery:hover p {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+}
+.cards-gallery:hover img {
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+    filter: grayscale(100);
+}
+.cards-gallery-btn:hover{
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+}
+
+.MuiMasonry-root{
+    align-content: center!important;
+    width: fit-content!important;
+}
+
+@media screen and (min-width: 900px) {
+    .MuiMasonry-root {
+        margin: inherit!important;
+    }
+}
+@media screen and (min-width: 600px) {
+    .MuiMasonry-root {
+        margin: inherit!important;
+    }
+}
+@media screen and (min-width: 0px) {
+    .MuiMasonry-root {
+        margin: inherit!important;
+    }
+}

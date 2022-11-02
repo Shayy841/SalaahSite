@@ -1,0 +1,85 @@
+.try{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    column-gap: 0rem;
+}
+.cards {    
+    margin: 0 auto;
+
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;    
+    position: relative;
+    color: #f0f0f0;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.cards img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    filter: grayscale(0);
+    transition: opacity 0.2s ease-out;
+}
+.cards h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+
+    font-weight: normal;
+}
+.cards p, .cards a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+}
+.cards p {
+    inset: auto auto 80px 30px;
+}
+.cards a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+}
+.cards:hover h2 {
+    inset: auto auto 6rem 1.8rem;
+    transition: inset 0.3s ease-out;
+}
+.cards:hover p, .cards:hover a {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+}
+.cards:hover img {
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+    filter: grayscale(100);
+}
+.material-symbols-outlined {
+    vertical-align: middle;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .try {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 710px) {
+    .try {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }

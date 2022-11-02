@@ -1,0 +1,74 @@
+.hello{
+  margin-left: 6vw;
+  margin-right: 6vw;
+  font-size: 12rem;
+  margin-bottom: 2rem;
+}
+.hero-container{
+  backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+margin-top: 3rem;  
+}
+
+.hero-head{
+margin-top: 5%;
+}
+
+.right{
+  text-align: right;
+}
+.hero-content{
+  width: 30%;
+  height: auto;
+  position: absolute;
+  right: 10rem;
+  bottom: 0rem;
+  font-size: 1.5rem;
+}
+
+.hero-content-text{
+  margin-bottom: 2rem;
+  color: #ffffff80;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 1350px) {
+  .hero-content{
+      position: initial;
+      width: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hello {
+    font-size: 8rem;
+  }
+  .hero-content{
+      width: 60%;
+      position: initial;
+      font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hello {
+    font-size: 5rem;
+  }
+  .hero-content{
+      width: 80%;
+      position: initial;
+      font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .hero-head{
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 2080px){
+  .hero-content{
+    right: 15rem;
+    bottom: -10rem;
+}
+}

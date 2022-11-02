@@ -1,0 +1,46 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.head__glass {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 12%;
+}
+
+.child__content {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.child__content p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.child__icon {
+  color: var(--color-green);
+}
+
+.second__content {
+  color: var(--color-light);
+  margin-top: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .parent {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .parent {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

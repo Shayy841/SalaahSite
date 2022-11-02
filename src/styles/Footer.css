@@ -1,0 +1,135 @@
+.creative{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+    margin-top: 12rem;    
+    margin-bottom: 6rem;
+}
+
+.left__side h1{
+  font-size: 6rem;
+  line-height: 52px;
+  margin-bottom: 3rem;  
+
+}
+.btn-creative{
+  padding: 9px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 0.5px solid var(--color-green);
+    font-size: 18px;    
+    cursor: pointer;
+    background-color: var(--color-green);
+    color: #000;      
+    font-weight: 500;   
+    font-family: 'Poppins', sans-serif;
+}
+.btn-creative:hover {    
+  transition: var(--transition);    
+  color: var(--color-green);
+  background-color: #000;
+  border: 0.5px solid var(--color-green);
+}
+
+/* ===============  Footer   ============== */
+
+footer{  
+  background-color: rgb(200, 151, 87);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+}
+
+footer a{  
+  color: #000;  
+}
+footer li{transition: var(--transition);}
+footer li:hover{
+  transform: scale(1.1);    
+}
+
+.footer__logo{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.permalinks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+}
+
+.footer__socials{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.footer__socials a{
+  background: #020c1b;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.footer__socials a:hover{
+  transform: scale(1.2);
+}
+
+.footer_copyright{
+  margin-bottom: 4rem;  
+}
+
+
+@media screen and (max-width: 600px) {
+  .permalinks{
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+  .footer__socials{
+      margin-bottom: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .creative {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .creative {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .left__side h1{
+    font-size: 4rem;
+    margin-bottom: 0.6rem;
+  }  
+}
+
+@media screen and (max-width: 500px){
+    .left__side h1{
+      font-size: 3rem;
+      margin-bottom: 0.6rem;
+      text-align: center;
+    }  
+    .right__side p{
+      font-size: 0.8rem;
+      color: var(--color-light);            
+    }
+    .right__side{
+      width: 50%;
+      margin: auto;
+    }
+}

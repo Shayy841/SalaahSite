@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=League+Spartan:wght@700&family=Montserrat:wght@200;300;400;500;700&family=Poppins&family=Raleway:wght@400;800;900&display=swap');
+
+@font-face {
+    font-family: "NeueMachina";
+    src: local("NeueMachina"),
+     url("./assets/fonts/NeueMachina/NeueMachina-Ultrabold.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "NeueMachinaReg";
+    src: local("NeueMachina"),
+     url("./assets/fonts/NeueMachina/NeueMachina-Regular.otf") format("opentype");
+    font-weight: light;
+}
+@font-face {
+    font-family: "NeueMachinaL";
+    src: local("NeueMachina"),
+     url("./assets/fonts/NeueMachina/NeueMachina-Light.otf") format("opentype");
+    font-weight: light;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+:root{
+    --transition: all 400ms ease;
+    /* --color-green: #1ee8b7; */
+    /* --color-green: #8a6fda; */
+    --color-green: rgb(200, 151, 87);
+    --color-dark-green: #235b5d;
+    
+    --color-bg-variant: #020c1b;
+    --color-primary-variant: rgba(77,181,255,0.4);
+
+    --color-light: rgba(255,255,255,0.6);
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;  
+}
+
+.white-content {
+  background: rgb(200, 151, 87);
+  color: black;
+}
+
+.Ultrabold{
+    font-family: "NeueMachina";
+}
+.Regular{
+    font-family: "NeueMachinaReg";
+    font-weight: lighter;
+}
+.Light{
+    font-family: "NeueMachinaL";
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }    
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm);
+    }    
+    .head__glass{
+        margin-top: 30% !important;
+    }
+}
