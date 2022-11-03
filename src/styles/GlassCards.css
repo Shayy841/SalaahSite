@@ -1,0 +1,65 @@
+.glass__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.head__glass {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+  
+}
+
+.glass__item {
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.glass__item {
+  /* https://css.glass - yha se check krlio bhai */
+  /* background: #8a6fda87; */
+  background: rgb(200, 151, 87);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+}
+.glass__item:hover {
+  border-color: var(--color-green);
+  background: transparent;
+}
+
+.glass__icon-div {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.icon {
+  height: 4rem;
+  width: auto;
+  margin-bottom: 0.3rem;
+}
+
+.glass__content {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  margin: 1.2rem 0 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .glass__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .glass__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }  
+}

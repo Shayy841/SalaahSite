@@ -1,0 +1,82 @@
+.grand_parent{ 
+  width: 100vw; 
+  height:80vh;
+  /* margin-top: 10%;  (In case of Design line) */
+  margin-top: 10%;
+}
+
+.about__container {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about__image {
+  max-width: 100%;
+  height: auto;  
+  border-radius: 2rem;
+  overflow: hidden;    
+  transition: var(--transition);
+}
+
+.about__image:hover{
+  transform: scale(1.1);  
+}
+
+.about__left h1{
+  font-size: 4rem;
+  line-height: 2.5rem;  
+  margin-bottom: 2rem;
+}
+.about__content h3{
+  line-height: 28px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+.about__content p{
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  color: var(--color-light);
+  margin-bottom: 1.5rem;  
+}
+
+hr{
+  border-color: rgba(255,255,255,0.3);
+  height: 1px;
+  margin-bottom: 1.6rem;
+}
+
+.about__left,
+.about__right {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+.about__right{
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .grand_parent {
+    height: auto;
+    margin-top: 15%;
+  }
+
+  .about__image {
+    max-width: 100%;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .about__left h1{
+    font-size: 3.2rem;
+  }
+  .grand_parent{
+    margin-top: 25%;
+  }
+}  
+
+
