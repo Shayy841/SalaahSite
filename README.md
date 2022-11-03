@@ -1,5 +1,5 @@
 # Salaah Community Official Website
-Salaah is a mini linkedIn platform built solely for the students of Abes Engineering College, which helps students of every year to connect with their alumni. Also, we provide all the required information about placements at a single place. We are working in improving the quality of skilled students.
+Salaah is a mini-LinkedIn site created just for Abes Engineering College students to let them connect with their alumni. In addition, we give all necessary placement information in one location.
 
 ## Version
 The App is currently on version 0.0.1, any person who wants to contribute in this project can make a PR.
