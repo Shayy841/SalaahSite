@@ -20,7 +20,7 @@
 .glass__item {
   /* https://css.glass - yha se check krlio bhai */
   /* background: #8a6fda87; */
-  background: rgb(200, 151, 87);
+  background: #CBC3E3;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.4px);

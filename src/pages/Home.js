@@ -12,7 +12,7 @@ import HomeLast from '../components/HomeLast.jsx';
 
 const Home = () => {
   return (
-    <div>
+    <div className='bggg'>
         <Navbar />
         <Hero />
         <About />

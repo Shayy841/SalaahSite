@@ -44,7 +44,7 @@ const Team = () => {
           navigation={true}
           grabCursor={true}
           autoplay={{
-            delay: 3500,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           spaceBetween={30}
