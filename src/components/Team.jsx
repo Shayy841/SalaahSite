@@ -10,10 +10,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination, Autoplay, Navigation } from "swiper";
+import {  EffectFade,Pagination, Autoplay, Navigation } from "swiper";
 import "swiper/css/bundle";
 
 const data = [
@@ -40,25 +41,35 @@ const Team = () => {
         </h1>
 
         <Swiper
-          modules={[Pagination, Autoplay, Navigation]}
-          navigation={true}
-          grabCursor={true}
+          // modules={[Pagination, Autoplay, Navigation]}
+          // navigation={true}
+          // grabCursor={true}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
           }}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          className="mySwiper"
+          // spaceBetween={30}
+          // pagination={{
+          //   clickable: true,
+          // }}
+          // className="mySwiper"
+          slidesPerView={2}
+        spaceBetween={30}
+        slidesPerGroup={2}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        grabCursor={true}
+        modules={[Pagination, Autoplay, Navigation]}
+        className="mySwiper"
         >
-          {data.map(({ avatar, name, comp, review }, index) => {
+          {data.map(({  name, comp, review, avatar }, index) => {
             return (
               <SwiperSlide key={index} className="team">
-                <div className="client__avatar">
-                  <img src={avatar} alt="Img1" />
-                </div>
+                
                 <h5
                   className="client__name"
                   style={{
@@ -67,7 +78,7 @@ const Team = () => {
                     fontFamily: "Poppins, sans-serif",
                   }}
                 >
-                  {name}
+                  
                 </h5>
                 <p
                   style={{
@@ -86,7 +97,11 @@ const Team = () => {
                     fontSize: "0.9rem",
                   }}
                 >
-                  {review}
+                  {review} <hr className="lin"/><br/>
+                  
+                  <div className="client__avatar">
+                  <img src={avatar} alt="Img1" />
+                </div>{name}
                 </small>
               </SwiperSlide>
             );
